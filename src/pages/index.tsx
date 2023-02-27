@@ -25,7 +25,7 @@ export default function Home() {
             </div>
           </div>
           <div className="flex items-center justify-center rounded">
-            <img src="/galera.png" className="max-h-full" />
+            <img src="/galera.png" className="max-h-full rounded-xl" />
           </div>
         </div>
       </div>

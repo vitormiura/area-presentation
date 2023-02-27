@@ -1,8 +1,7 @@
 import Head from "next/head";
-import Image from "next/image";
 import { Sidebar } from "../components/Sidebar";
 
-export default function Roger() {
+export default function Vinicius() {
   return (
     <>
       <Head>
@@ -12,57 +11,104 @@ export default function Roger() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Sidebar />
-      <div className="p-4 sm:ml-64">
-        <div className="p-4 border-2 border-gray-200 border-dashed rounded-lg dark:border-gray-700">
-          <div className="grid grid-cols-3 gap-4 mb-4">
-            <div className="flex items-center justify-center h-24 rounded bg-gray-50 dark:bg-gray-800">
-              <p className="text-2xl text-gray-400 dark:text-gray-500">
-                Vitor Pirula
-              </p>
+      <div className="w-full h-2 bg-gray-50">
+        <img className="h-full w-full object-cover" src="/bosch_faixa.svg" />
+      </div>
+      <div className="absolute p-4 sm:ml-64 z-50">
+        <div className="py-4 px-10 rounded-lg">
+          <div className="grid grid-cols-8 mb-8 gap-10">
+            <div className="flex items-center justify-start">
+              <img
+                src="/android.png"
+                className="max-h-full p-1 bg-blue-200 rounded-full"
+              />
             </div>
-            <div className="flex items-center justify-center h-24 rounded bg-gray-50 dark:bg-gray-800">
-              <p className="text-2xl text-gray-400 dark:text-gray-500">+</p>
-            </div>
-            <div className="flex items-center justify-center h-24 rounded bg-gray-50 dark:bg-gray-800">
-              <p className="text-2xl text-gray-400 dark:text-gray-500">+</p>
+            <div className="col-span-7 flex flex-col justify-center items-start h-36">
+              <a
+                href="https://vitormiura.dev/"
+                className="text-3xl font-bold"
+                target={"_blank"}
+              >
+                Vinicius Ventura de Andrade
+              </a>
+              <p className="text-2xl">18 years old</p>
+              <div className="flex gap-3 mt-6">
+                <a href="https://github.com/viniciusventura29" target={"_blank"}>
+                  <img
+                    src="/brand-github.svg"
+                    className="flex items-center p-2 w-12 bg-blue-50 rounded-full hover:bg-blue-100 transition-all duration-300 hover:shadow cursor-pointer"
+                    alt=""
+                  />
+                </a>
+                <a href="https://www.linkedin.com/in/vini-ventura29/" target={"_blank"}>
+                  <img
+                    src="/brand-linkedin.svg"
+                    className="flex items-center p-2 w-12 bg-blue-50 rounded-full hover:bg-blue-100 transition-all duration-300 hover:shadow cursor-pointer"
+                    alt=""
+                  />
+                </a>
+              </div>
             </div>
           </div>
-          <div className="flex items-center justify-center h-48 mb-4 rounded bg-gray-50 dark:bg-gray-800">
-            <p className="text-2xl text-gray-400 dark:text-gray-500">+</p>
+
+          <div className="h-48 py-4">
+            <h2 className="mb-2 text-2xl font-bold">Education 📚</h2>
+            <ul className="space-y-1 text-gray-500 list-disc list-inside dark:text-gray-400">
+              <li>
+                Curso Técnico em Analise e Desenvolvimento | Etec Polivalente de
+                Americana | 2019 - 2021
+              </li>
+              <li>
+                Curso de Desenvolvimento de Sistemas | Senai Roberto Mange |
+                2022 - Atual
+              </li>
+              <li>
+                Analise e Desenvolvimento de Sistemas | Fatec | 2022 - Atual
+              </li>
+            </ul>
           </div>
-          <div className="grid grid-cols-2 gap-4 mb-4">
-            <div className="flex items-center justify-center rounded bg-gray-50 h-28 dark:bg-gray-800">
-              <p className="text-2xl text-gray-400 dark:text-gray-500">+</p>
-            </div>
-            <div className="flex items-center justify-center rounded bg-gray-50 h-28 dark:bg-gray-800">
-              <p className="text-2xl text-gray-400 dark:text-gray-500">+</p>
-            </div>
-            <div className="flex items-center justify-center rounded bg-gray-50 h-28 dark:bg-gray-800">
-              <p className="text-2xl text-gray-400 dark:text-gray-500">+</p>
-            </div>
-            <div className="flex items-center justify-center rounded bg-gray-50 h-28 dark:bg-gray-800">
-              <p className="text-2xl text-gray-400 dark:text-gray-500">+</p>
-            </div>
+
+          <div className="h-48 py-4">
+            <h2 className="mb-2 text-2xl font-bold">Hobbies ❤️</h2>
+            <ul className="space-y-1 text-gray-500 list-disc list-inside dark:text-gray-400">
+              <li>Cinema</li>
+              <li>Instrumentos musicais</li>
+              <li>Futebol</li>
+              <li>Séries</li>
+            </ul>
           </div>
-          <div className="flex items-center justify-center h-48 mb-4 rounded bg-gray-50 dark:bg-gray-800">
-            <p className="text-2xl text-gray-400 dark:text-gray-500">+</p>
-          </div>
-          <div className="grid grid-cols-2 gap-4">
-            <div className="flex items-center justify-center rounded bg-gray-50 h-28 dark:bg-gray-800">
-              <p className="text-2xl text-gray-400 dark:text-gray-500">+</p>
-            </div>
-            <div className="flex items-center justify-center rounded bg-gray-50 h-28 dark:bg-gray-800">
-              <p className="text-2xl text-gray-400 dark:text-gray-500">+</p>
-            </div>
-            <div className="flex items-center justify-center rounded bg-gray-50 h-28 dark:bg-gray-800">
-              <p className="text-2xl text-gray-400 dark:text-gray-500">+</p>
-            </div>
-            <div className="flex items-center justify-center rounded bg-gray-50 h-28 dark:bg-gray-800">
-              <p className="text-2xl text-gray-400 dark:text-gray-500">+</p>
-            </div>
+
+          <div className="h-48 py-4">
+            <h2 className="mb-2 text-2xl font-bold">Projects 💼</h2>
+            <ul className="space-y-1 text-gray-500 list-disc list-inside dark:text-gray-400">
+              <li>
+                <a
+                  href="https://venturanotes.vercel.app/"
+                  target={"_blank"}
+                  className="hover:text-blue-500"
+                >
+                  Notes
+                </a>
+              </li>
+              <li>ETS Einer</li>
+              <li>
+                <a
+                  href="ventura.monkeydevs.org/"
+                  target={"_blank"}
+                  className="hover:text-blue-500"
+                >
+                  personal website
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
+      <img
+        className="absolute top-0 w-full h-full z-0 opacity-20"
+        src="bg-2.svg"
+        alt=""
+      />
     </>
   );
 }

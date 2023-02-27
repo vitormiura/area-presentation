@@ -81,7 +81,7 @@ export function Sidebar() {
             </li>
             <li>
               <Link
-                href="/"
+                href="/danielhenrique"
                 className="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
               >
                 <Image
@@ -115,15 +115,15 @@ export function Sidebar() {
             </li>
             <li>
               <Link
-                href="/"
+                href="/kaiquecosta"
                 className="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
               >
                 <Image
-                  src="/next.svg"
+                  src="/20230227_151853 (3).jpg"
                   alt="roger"
                   width={100}
                   height={112}
-                  className="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                  className="rounded-2xl flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
                 ></Image>
                 <span className="flex-1 ml-3 whitespace-nowrap">Kaique Costa</span>
               </Link>

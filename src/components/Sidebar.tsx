@@ -1,5 +1,5 @@
-import Head from "next/head";
 import Image from "next/image";
+import Link from 'next/link'
 import { Inter } from "next/font/google";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -15,8 +15,8 @@ export function Sidebar() {
         <div className="h-full px-3 py-4 overflow-y-auto bg-gray-50 dark:bg-gray-800">
           <ul className="space-y-2">
             <li>
-              <a
-                href="#"
+              <Link
+                href="/"
                 className="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
               >
                 <Image
@@ -27,12 +27,12 @@ export function Sidebar() {
                   className="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
                 ></Image>
                 <span className="ml-3">Home</span>
-              </a>
+              </Link>
             </li>
             <hr />
             <li>
-              <a
-                href="#"
+              <Link
+                href="/vitormiura"
                 className="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
               >
                 <Image
@@ -43,11 +43,11 @@ export function Sidebar() {
                   className="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
                 ></Image>
                 <span className="ml-3">Vitor Miura</span>
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="#"
+              <Link
+                href="/igoroliveira"
                 className="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
               >
                 <Image
@@ -60,11 +60,11 @@ export function Sidebar() {
                 <span className="flex-1 ml-3 whitespace-nowrap">
                   Igor Oliveira
                 </span>
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="#"
+              <Link
+                href="/viktormarinho"
                 className="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
               >
                 <Image
@@ -77,11 +77,11 @@ export function Sidebar() {
                 <span className="flex-1 ml-3 whitespace-nowrap">
                   Viktor Marinho
                 </span>
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="#"
+              <Link
+                href="/"
                 className="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
               >
                 <Image
@@ -94,11 +94,11 @@ export function Sidebar() {
                 <span className="flex-1 ml-3 whitespace-nowrap">
                   Daniel Henrique
                 </span>
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="#"
+              <Link
+                href="/viniciusventura"
                 className="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
               >
                 <Image
@@ -111,11 +111,11 @@ export function Sidebar() {
                 <span className="flex-1 ml-3 whitespace-nowrap">
                   Vinícius Ventura
                 </span>
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="#"
+              <Link
+                href="/"
                 className="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
               >
                 <Image
@@ -126,7 +126,7 @@ export function Sidebar() {
                   className="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
                 ></Image>
                 <span className="flex-1 ml-3 whitespace-nowrap">Kaique Costa</span>
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

@@ -72,6 +72,7 @@ export default function Miura() {
           <div className="h-48 py-4">
             <h2 className="mb-2 text-2xl font-bold">Hobbies ❤️</h2>
             <ul className="space-y-1 text-gray-500 list-disc list-inside dark:text-gray-400">
+              <li>Programming</li>
               <li>Sport Fishing</li>
               <li>
                 <a
@@ -83,7 +84,7 @@ export default function Miura() {
                 </a>
               </li>
               <li>Gym</li>
-              <li>Programming</li>
+              <li>Gaming</li>
             </ul>
           </div>
 
@@ -111,7 +112,8 @@ export default function Miura() {
                   target={"_blank"}
                   className="hover:text-blue-500"
                 >
-                  <strong>Blog</strong> - My personal website/blog made with Astro Framework.
+                  <strong>Blog</strong> - My personal website/blog made with
+                  Astro Framework.
                 </a>
               </li>
             </ul>

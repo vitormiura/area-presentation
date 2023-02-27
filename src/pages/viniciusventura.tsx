@@ -71,10 +71,10 @@ export default function Vinicius() {
           <div className="h-48 py-4">
             <h2 className="mb-2 text-2xl font-bold">Hobbies ❤️</h2>
             <ul className="space-y-1 text-gray-500 list-disc list-inside dark:text-gray-400">
-              <li>Cinema</li>
-              <li>Instrumentos musicais</li>
-              <li>Futebol</li>
-              <li>Séries</li>
+              <li>Programming</li>
+              <li>Musical instruments</li>
+              <li>Gaming</li>
+              <li>Watch movies</li>
             </ul>
           </div>
 
@@ -87,17 +87,17 @@ export default function Vinicius() {
                   target={"_blank"}
                   className="hover:text-blue-500"
                 >
-                  Notes
+                  <strong>Notes</strong> - This website is my personal notes, where I use to organize myself.
                 </a>
               </li>
-              <li>ETS Einer</li>
+              <li><strong>Bosch Einer</strong> - The ETS Toolkit and Developer ecossystem, revamped (Experience using Typescript, ReactJS, Microservices and Monorepos)</li>
               <li>
                 <a
                   href="ventura.monkeydevs.org/"
                   target={"_blank"}
                   className="hover:text-blue-500"
                 >
-                  personal website
+                 <strong>Personal website</strong> -My personal website, that contain my blog, a little bit about me and also some projects that I developed
                 </a>
               </li>
             </ul>

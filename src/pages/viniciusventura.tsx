@@ -35,7 +35,7 @@ export default function Vinicius() {
             </div>
             <div className="col-span-7 flex flex-col justify-center items-start h-36">
               <a
-                href="https://vitormiura.dev/"
+                href="https://ventura.monkeydevs.org/"
                 className="text-3xl font-bold"
                 target={"_blank"}
               >
@@ -118,7 +118,7 @@ export default function Vinicius() {
               </li>
               <li>
                 <a
-                  href="ventura.monkeydevs.org/"
+                  href="https://ventura.monkeydevs.org/"
                   target={"_blank"}
                   className="hover:text-blue-500"
                 >

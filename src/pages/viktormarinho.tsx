@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Image from "next/image";
 import { Sidebar } from "../components/Sidebar";
 
 export default function Viktor() {
@@ -12,72 +13,113 @@ export default function Viktor() {
       </Head>
       <Sidebar />
       <div className="w-full h-2 bg-gray-50">
-      <img
-        className="h-full w-full object-cover"
-        src="/bosch_faixa.svg"
+        <Image
+          width={100}
+          height={100}
+          alt="img"
+          className="h-full w-full object-cover"
+          src="/bosch_faixa.svg"
         />
       </div>
-        <div className="absolute p-4 sm:ml-64 z-50">
-          <div className="py-4 px-10 rounded-lg">
-            <div className="grid grid-cols-8 mb-8 gap-10">
-              <div className="flex items-center justify-start">
-                <img src="/kmudo.png" className="max-h-full p-1 bg-blue-200 rounded-full" />
+      <div className="absolute p-4 sm:ml-64 z-50">
+        <div className="py-4 px-10 rounded-lg">
+          <div className="grid grid-cols-8 mb-8 gap-10">
+            <div className="flex items-center justify-start">
+              <Image
+                width={100}
+                height={100}
+                alt="img"
+                src="/kmudo.png"
+                className="max-h-full p-1 bg-blue-200 rounded-full"
+              />
+            </div>
+            <div className="col-span-7 flex flex-col justify-center items-start h-36">
+              <a
+                href="https://github.com/viktormarinho"
+                className="text-3xl font-bold"
+                target={"_blank"}
+              >
+                Viktor Marinho Pereira
+              </a>
+              <p className="text-2xl">18 years old</p>
+              <div className="flex gap-3 mt-6">
+                <Image
+                  width={100}
+                  height={100}
+                  src="/brand-github.svg"
+                  className="flex items-center p-2 w-12 bg-blue-50 rounded-full hover:bg-blue-100 transition-all duration-300 hover:shadow cursor-pointer"
+                  alt=""
+                />
+                <Image
+                  width={100}
+                  height={100}
+                  src="/brand-linkedin.svg"
+                  className="flex items-center p-2 w-12 bg-blue-50 rounded-full hover:bg-blue-100 transition-all duration-300 hover:shadow cursor-pointer"
+                  alt=""
+                />
               </div>
-              <div className="col-span-7 flex flex-col justify-center items-start h-36">
-                <a
-                  href="https://github.com/viktormarinho"
-                  className="text-3xl font-bold"
-                  target={"_blank"}
-                >
-                  Viktor Marinho Pereira
-                </a>
-                <p className="text-2xl">18 years old</p>
-                <div className="flex gap-3 mt-6">
-                <img src="/brand-github.svg" className="flex items-center p-2 w-12 bg-blue-50 rounded-full hover:bg-blue-100 transition-all duration-300 hover:shadow cursor-pointer" alt="" />
-                <img src="/brand-linkedin.svg" className="flex items-center p-2 w-12 bg-blue-50 rounded-full hover:bg-blue-100 transition-all duration-300 hover:shadow cursor-pointer" alt="" />
-                </div>
-              </div>
-            </div>
-
-            <div className="h-48 py-4">
-              <h2 className="mb-2 text-2xl font-bold">Education 📚</h2>
-              <ul className="space-y-1 text-gray-500 list-disc list-inside dark:text-gray-400">
-                <li>
-                  Técnico em Desenvolvimento de Sistemas | ETEC Bento Quirino | 2019 - 2022
-                </li>
-                <li>
-                  Curso de Desenvolvimento de Sistemas | Senai Roberto Mange |
-                  2022 - Atual
-                </li>
-                <li>Análise e Desenvolvimento de Sistemas | Anhembi Morumbi | 2022 - Atual</li>
-              </ul>
-            </div>
-
-            <div className="h-48 py-4">
-              <h2 className="mb-2 text-2xl font-bold">Hobbies ❤️</h2>
-              <ul className="space-y-1 text-gray-500 list-disc list-inside dark:text-gray-400">
-                <li>Gaming</li>
-                <li>Studying about general programming</li>
-                <li>Manga</li>
-              </ul>
-            </div>
-
-            <div className="h-48 py-4">
-              <h2 className="mb-2 text-2xl font-bold">Projects 💼</h2>
-              <ul className="space-y-1 text-gray-500 list-disc list-inside dark:text-gray-400">
-                <li><strong>Bosch Einer</strong> - The ETS Toolkit and Developer ecossystem, revamped (Experience using Typescript, ReactJS, Microservices and Monorepos)</li>
-                <li><strong>HuaweiBase</strong> - Back-end as a Service made in a 3-day hackathon (Used Typescript to build a portable Back-end, a CLI and an SDK)</li>
-                <li><strong>Hammer</strong> - Monorepo CLI tool for running tasks in parallel (Rust and Clap)</li>
-                <li><strong>Mkg</strong> - Codegen tool for React/TS Projects (Python)</li>
-              </ul>
             </div>
           </div>
+
+          <div className="h-48 py-4">
+            <h2 className="mb-2 text-2xl font-bold">Education 📚</h2>
+            <ul className="space-y-1 text-gray-500 list-disc list-inside">
+              <li>
+                Técnico em Desenvolvimento de Sistemas | ETEC Bento Quirino |
+                2019 - 2022
+              </li>
+              <li>
+                Curso de Desenvolvimento de Sistemas | Senai Roberto Mange |
+                2022 - Atual
+              </li>
+              <li>
+                Análise e Desenvolvimento de Sistemas | Anhembi Morumbi | 2022 -
+                Atual
+              </li>
+            </ul>
+          </div>
+
+          <div className="h-48 py-4">
+            <h2 className="mb-2 text-2xl font-bold">Hobbies ❤️</h2>
+            <ul className="space-y-1 text-gray-500 list-disc list-inside">
+              <li>Gaming</li>
+              <li>Studying about general programming</li>
+              <li>Manga</li>
+            </ul>
+          </div>
+
+          <div className="h-48 py-4">
+            <h2 className="mb-2 text-2xl font-bold">Projects 💼</h2>
+            <ul className="space-y-1 text-gray-500 list-disc list-inside">
+              <li>
+                <strong>Bosch Einer</strong> - The ETS Toolkit and Developer
+                ecossystem, revamped (Experience using Typescript, ReactJS,
+                Microservices and Monorepos)
+              </li>
+              <li>
+                <strong>HuaweiBase</strong> - Back-end as a Service made in a
+                3-day hackathon (Used Typescript to build a portable Back-end, a
+                CLI and an SDK)
+              </li>
+              <li>
+                <strong>Hammer</strong> - Monorepo CLI tool for running tasks in
+                parallel (Rust and Clap)
+              </li>
+              <li>
+                <strong>Mkg</strong> - Codegen tool for React/TS Projects
+                (Python)
+              </li>
+            </ul>
+          </div>
         </div>
-        <img
-          className="absolute top-0 w-full h-full z-0 opacity-20"
-          src="bg-2.svg"
-          alt=""
-        />
+      </div>
+      <Image
+        width={100}
+        height={100}
+        className="absolute top-0 w-full h-full z-0 opacity-20"
+        src="bg-2.svg"
+        alt=""
+      />
     </>
   );
 }

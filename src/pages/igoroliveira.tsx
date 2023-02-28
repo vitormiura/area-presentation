@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Image from "next/image";
 import { Sidebar } from "../components/Sidebar";
 
 export default function Igor() {
@@ -12,13 +13,22 @@ export default function Igor() {
       </Head>
       <Sidebar />
       <div className="w-full h-2 bg-gray-50">
-        <img className="h-full w-full object-cover" src="/bosch_faixa.svg" />
+        <Image
+          alt="img"
+          className="h-full w-full object-cover"
+          src="/bosch_faixa.svg"
+          width={100}
+          height={100}
+        />
       </div>
       <div className="absolute p-4 sm:ml-64 z-50">
         <div className="py-4 px-10 rounded-lg">
           <div className="grid grid-cols-8 mb-8 gap-10">
             <div className="flex items-center justify-start">
-              <img
+              <Image
+                alt="img"
+                width={100}
+                height={100}
                 src="/roger.png"
                 className="max-h-full p-1 bg-blue-200 rounded-full"
               />
@@ -30,7 +40,9 @@ export default function Igor() {
               <p className="text-2xl">20 years old</p>
               <div className="flex gap-3 mt-6">
                 <a href="https://github.com/iguoliveira" target={"_blank"}>
-                  <img
+                  <Image
+                    width={100}
+                    height={100}
                     src="/brand-github.svg"
                     className="flex items-center p-2 w-12 bg-blue-50 rounded-full hover:bg-blue-100 transition-all duration-300 hover:shadow cursor-pointer"
                     alt=""
@@ -40,7 +52,9 @@ export default function Igor() {
                   href="https://www.linkedin.com/in/igor-oliveira-022595207/"
                   target={"_blank"}
                 >
-                  <img
+                  <Image
+                    width={100}
+                    height={100}
                     src="/brand-linkedin.svg"
                     className="flex items-center p-2 w-12 bg-blue-50 rounded-full hover:bg-blue-100 transition-all duration-300 hover:shadow cursor-pointer"
                     alt=""
@@ -52,7 +66,7 @@ export default function Igor() {
 
           <div className="h-48 py-4">
             <h2 className="mb-2 text-2xl font-bold">Education 📚</h2>
-            <ul className="space-y-1 text-gray-500 list-disc list-inside dark:text-gray-400">
+            <ul className="space-y-1 text-gray-500 list-disc list-inside">
               <li>Curso de Robótica e Hardware | Microcamp | 2019 - 2020</li>
               <li>
                 Curso de Técnico de Informatica para Internet | Etec de
@@ -71,7 +85,7 @@ export default function Igor() {
 
           <div className="h-48 py-4">
             <h2 className="mb-2 text-2xl font-bold">Hobbies ❤️</h2>
-            <ul className="space-y-1 text-gray-500 list-disc list-inside dark:text-gray-400">
+            <ul className="space-y-1 text-gray-500 list-disc list-inside">
               <li>Gaming</li>
               <li>Gym</li>
               <li>Coding</li>
@@ -82,25 +96,36 @@ export default function Igor() {
 
           <div className="h-48 py-4">
             <h2 className="mb-2 text-2xl font-bold">Projects 💼</h2>
-            <ul className="space-y-1 text-gray-500 list-disc list-inside dark:text-gray-400">
+            <ul className="space-y-1 text-gray-500 list-disc list-inside">
               <li>
                 <strong>Bosch Einer</strong> - The ETS Toolkit and Developer
                 ecossystem, revamped (Experience using Typescript, ReactJS,
                 Microservices and Monorepos).
               </li>
               <li>
-                <a href="https://github.com/monkey-developers/monkeyrecommendation" target={"_blank"}><strong>Recommendation Plataform</strong></a> - A website to list and storage all oeuvre of the user to other users to see.
+                <a
+                  href="https://github.com/monkey-developers/monkeyrecommendation"
+                  target={"_blank"}
+                >
+                  <strong>Recommendation Plataform</strong>
+                </a>{" "}
+                - A website to list and storage all oeuvre of the user to other
+                users to see.
               </li>
               <li>
-                <strong>RPA Daily Sales</strong> - A bot to made comparison between excel data sheets. Formatting and extracting data from a matrix data table.
+                <strong>RPA Daily Sales</strong> - A bot to made comparison
+                between excel data sheets. Formatting and extracting data from a
+                matrix data table.
               </li>
             </ul>
           </div>
         </div>
       </div>
-      <img
+      <Image
+        width={100}
+        height={100}
         className="absolute top-0 w-full h-full z-0 opacity-20"
-        src="bg-2.svg"
+        src="/bg-2.svg"
         alt=""
       />
     </>

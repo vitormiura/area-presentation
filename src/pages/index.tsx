@@ -16,16 +16,30 @@ export default function Home() {
 
       <div className="p-4 sm:ml-64">
         <div className="p-4 rounded-lg dark:border-gray-700">
-        <div className="grid grid-cols-5 gap-4 mb-4">
+          <div className="grid grid-cols-5 gap-4 mb-4">
             <div className="flex items-center justify-center rounded h-28">
-              <img src="/ets-logo.png" className="max-h-full" />
+              <Image
+                width={100}
+                height={100}
+                alt=""
+                src="/ets-logo.png"
+                className="max-h-full"
+              />
             </div>
             <div className="col-span-4 rounded h-28 flex items-center">
-              <p className="text-5xl text-black text-bold">CaP/ETS | Engineering Technical School</p>
+              <p className="text-5xl text-black text-bold">
+                CaP/ETS | Engineering Technical School
+              </p>
             </div>
           </div>
           <div className="flex items-center justify-center rounded">
-            <img src="/galera.png" className="max-h-full rounded-xl" />
+            <Image
+              width={5990}
+              height={2633}
+              alt=""
+              src="/galera.png"
+              className="max-h-full rounded-xl w-full"
+            />
           </div>
         </div>
       </div>

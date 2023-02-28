@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Image from "next/image";
 import { Sidebar } from "../components/Sidebar";
 
 export default function Vinicius() {
@@ -12,13 +13,22 @@ export default function Vinicius() {
       </Head>
       <Sidebar />
       <div className="w-full h-2 bg-gray-50">
-        <img className="h-full w-full object-cover" src="/bosch_faixa.svg" />
+        <Image
+          width={100}
+          height={100}
+          alt="img"
+          className="h-full w-full object-cover"
+          src="/bosch_faixa.svg"
+        />
       </div>
       <div className="absolute p-4 sm:ml-64 z-50">
         <div className="py-4 px-10 rounded-lg">
           <div className="grid grid-cols-8 mb-8 gap-10">
             <div className="flex items-center justify-start">
-              <img
+              <Image
+                width={100}
+                height={100}
+                alt="img"
                 src="/android.png"
                 className="max-h-full p-1 bg-blue-200 rounded-full"
               />
@@ -33,15 +43,25 @@ export default function Vinicius() {
               </a>
               <p className="text-2xl">18 years old</p>
               <div className="flex gap-3 mt-6">
-                <a href="https://github.com/viniciusventura29" target={"_blank"}>
-                  <img
+                <a
+                  href="https://github.com/viniciusventura29"
+                  target={"_blank"}
+                >
+                  <Image
+                    width={100}
+                    height={100}
                     src="/brand-github.svg"
                     className="flex items-center p-2 w-12 bg-blue-50 rounded-full hover:bg-blue-100 transition-all duration-300 hover:shadow cursor-pointer"
                     alt=""
                   />
                 </a>
-                <a href="https://www.linkedin.com/in/vini-ventura29/" target={"_blank"}>
-                  <img
+                <a
+                  href="https://www.linkedin.com/in/vini-ventura29/"
+                  target={"_blank"}
+                >
+                  <Image
+                    width={100}
+                    height={100}
                     src="/brand-linkedin.svg"
                     className="flex items-center p-2 w-12 bg-blue-50 rounded-full hover:bg-blue-100 transition-all duration-300 hover:shadow cursor-pointer"
                     alt=""
@@ -53,7 +73,7 @@ export default function Vinicius() {
 
           <div className="h-48 py-4">
             <h2 className="mb-2 text-2xl font-bold">Education 📚</h2>
-            <ul className="space-y-1 text-gray-500 list-disc list-inside dark:text-gray-400">
+            <ul className="space-y-1 text-gray-500 list-disc list-inside">
               <li>
                 Curso Técnico em Analise e Desenvolvimento | Etec Polivalente de
                 Americana | 2019 - 2021
@@ -70,7 +90,7 @@ export default function Vinicius() {
 
           <div className="h-48 py-4">
             <h2 className="mb-2 text-2xl font-bold">Hobbies ❤️</h2>
-            <ul className="space-y-1 text-gray-500 list-disc list-inside dark:text-gray-400">
+            <ul className="space-y-1 text-gray-500 list-disc list-inside">
               <li>Programming</li>
               <li>Musical instruments</li>
               <li>Gaming</li>
@@ -80,31 +100,40 @@ export default function Vinicius() {
 
           <div className="h-48 py-4">
             <h2 className="mb-2 text-2xl font-bold">Projects 💼</h2>
-            <ul className="space-y-1 text-gray-500 list-disc list-inside dark:text-gray-400">
+            <ul className="space-y-1 text-gray-500 list-disc list-inside">
               <li>
                 <a
                   href="https://venturanotes.vercel.app/"
                   target={"_blank"}
                   className="hover:text-blue-500"
                 >
-                  <strong>Notes</strong> - This website is my personal notes, where I use to organize myself.
+                  <strong>Notes</strong> - This website is my personal notes,
+                  where I use to organize myself.
                 </a>
               </li>
-              <li><strong>Bosch Einer</strong> - The ETS Toolkit and Developer ecossystem, revamped (Experience using Typescript, ReactJS, Microservices and Monorepos)</li>
+              <li>
+                <strong>Bosch Einer</strong> - The ETS Toolkit and Developer
+                ecossystem, revamped (Experience using Typescript, ReactJS,
+                Microservices and Monorepos)
+              </li>
               <li>
                 <a
                   href="ventura.monkeydevs.org/"
                   target={"_blank"}
                   className="hover:text-blue-500"
                 >
-                 <strong>Personal website</strong> -My personal website, that contain my blog, a little bit about me and also some projects that I developed
+                  <strong>Personal website</strong> -My personal website, that
+                  contain my blog, a little bit about me and also some projects
+                  that I developed
                 </a>
               </li>
             </ul>
           </div>
         </div>
       </div>
-      <img
+      <Image
+        width={100}
+        height={100}
         className="absolute top-0 w-full h-full z-0 opacity-20"
         src="bg-2.svg"
         alt=""

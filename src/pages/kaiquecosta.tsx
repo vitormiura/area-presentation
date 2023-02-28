@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Image from "next/image";
 import { Sidebar } from "../components/Sidebar";
 
 export default function Kaique() {
@@ -12,36 +13,48 @@ export default function Kaique() {
       </Head>
       <Sidebar />
       <div className="w-full h-2 bg-gray-50">
-        <img className="h-full w-full object-cover" src="/bosch_faixa.svg" />
+        <Image
+          width={100}
+          height={100}
+          alt="img"
+          className="h-full w-full object-cover"
+          src="/bosch_faixa.svg"
+        />
       </div>
       <div className="absolute p-4 sm:ml-64 z-50">
         <div className="py-4 px-10 rounded-lg">
           <div className="grid grid-cols-8 mb-8 gap-10">
             <div className="flex items-center justify-start">
-              <img
+              <Image
+                width={100}
+                height={100}
+                alt="img"
                 src="/20230227_151853 (3).jpg"
                 className="max-h-full p-1 bg-blue-200 rounded-full"
               />
             </div>
             <div className="col-span-7 flex flex-col justify-center items-start h-36">
-              <a
-                href="#"
-                className="text-3xl font-bold"
-                target={"_blank"}
-              >
+              <a href="#" className="text-3xl font-bold" target={"_blank"}>
                 Kaique Henrique Carreiro da Costa
               </a>
               <p className="text-2xl">18 years old</p>
               <div className="flex gap-3 mt-6">
                 <a href="https://github.com/kaique64" target={"_blank"}>
-                  <img
+                  <Image
+                    width={100}
+                    height={100}
                     src="/brand-github.svg"
                     className="flex items-center p-2 w-12 bg-blue-50 rounded-full hover:bg-blue-100 transition-all duration-300 hover:shadow cursor-pointer"
                     alt=""
                   />
                 </a>
-                <a href="https://www.linkedin.com/in/kaique-henrique/" target={"_blank"}>
-                  <img
+                <a
+                  href="https://www.linkedin.com/in/kaique-henrique/"
+                  target={"_blank"}
+                >
+                  <Image
+                    width={100}
+                    height={100}
                     src="/brand-linkedin.svg"
                     className="flex items-center p-2 w-12 bg-blue-50 rounded-full hover:bg-blue-100 transition-all duration-300 hover:shadow cursor-pointer"
                     alt=""
@@ -53,22 +66,22 @@ export default function Kaique() {
 
           <div className="h-48 py-4">
             <h2 className="mb-2 text-2xl font-bold">Education 📚</h2>
-            <ul className="space-y-1 text-gray-500 list-disc list-inside dark:text-gray-400">
+            <ul className="space-y-1 text-gray-500 list-disc list-inside">
               <li>
-                Accounting Technician | Escola Municipal Dr. Leandro Franceschini | 2019 - 2022
+                Accounting Technician | Escola Municipal Dr. Leandro
+                Franceschini | 2019 - 2022
               </li>
               <li>
-                Software Development Technician | Escola SENAI Prof. Dr. Euryclides de Jesus Zerbini | 2020 - 2021
+                Software Development Technician | Escola SENAI Prof. Dr.
+                Euryclides de Jesus Zerbini | 2020 - 2021
               </li>
-              <li>
-                Computer Engineering | Unisal | 2023 - 2026
-              </li>
+              <li>Computer Engineering | Unisal | 2023 - 2026</li>
             </ul>
           </div>
 
           <div className="h-48 py-4">
             <h2 className="mb-2 text-2xl font-bold">Hobbies ❤️</h2>
-            <ul className="space-y-1 text-gray-500 list-disc list-inside dark:text-gray-400">
+            <ul className="space-y-1 text-gray-500 list-disc list-inside">
               <li>Movies</li>
               <li>Series</li>
               <li>Musics</li>
@@ -78,7 +91,7 @@ export default function Kaique() {
 
           <div className="h-48 py-4">
             <h2 className="mb-2 text-2xl font-bold">Projects 💼</h2>
-            <ul className="space-y-1 text-gray-500 list-disc list-inside dark:text-gray-400">
+            <ul className="space-y-1 text-gray-500 list-disc list-inside">
               <li>
                 <a
                   href="http://cap-ets.br.bosch.com/caderno-verde"
@@ -93,7 +106,7 @@ export default function Kaique() {
                   href="http://cap-ets.br.bosch.com/"
                   target={"_blank"}
                   className="hover:text-blue-500"
-                  >
+                >
                   ETS Router
                 </a>
               </li>
@@ -102,7 +115,9 @@ export default function Kaique() {
           </div>
         </div>
       </div>
-      <img
+      <Image
+        width={100}
+        height={100}
         className="absolute top-0 w-full h-full z-0 opacity-20"
         src="bg-2.svg"
         alt=""
@@ -110,4 +125,3 @@ export default function Kaique() {
     </>
   );
 }
-

@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Image from "next/image";
 import { Sidebar } from "../components/Sidebar";
 
 export default function Vinicius() {
@@ -12,14 +13,23 @@ export default function Vinicius() {
       </Head>
       <Sidebar />
       <div className="w-full h-2 bg-gray-50">
-        <img className="h-full w-full object-cover" src="/bosch_faixa.svg" />
+        <Image
+          width={100}
+          height={100}
+          alt="img"
+          className="h-full w-full object-cover"
+          src="/bosch_faixa.svg"
+        />
       </div>
       <div className="absolute p-4 sm:ml-64 z-50">
         <div className="py-4 px-10 rounded-lg">
           <div className="grid grid-cols-8 mb-8 gap-10">
             <div className="flex items-center justify-start">
-              <img
-                src="/android.png"
+              <Image
+                alt="img"
+                width={100}
+                height={100}
+                src="/dino.png"
                 className="max-h-full p-1 bg-blue-200 rounded-full"
               />
             </div>
@@ -29,19 +39,29 @@ export default function Vinicius() {
                 className="text-3xl font-bold"
                 target={"_blank"}
               >
-                Vinicius Ventura de Andrade
+                Daniel Henrique
               </a>
               <p className="text-2xl">18 years old</p>
               <div className="flex gap-3 mt-6">
-                <a href="https://github.com/viniciusventura29" target={"_blank"}>
-                  <img
-                    src="/brand-github.svg"
+                <a
+                  href="https://github.com/viniciusventura29"
+                  target={"_blank"}
+                >
+                  <Image
+                    width={100}
+                    height={100}
+                    src="brand-github.svg"
                     className="flex items-center p-2 w-12 bg-blue-50 rounded-full hover:bg-blue-100 transition-all duration-300 hover:shadow cursor-pointer"
                     alt=""
                   />
                 </a>
-                <a href="https://www.linkedin.com/in/vini-ventura29/" target={"_blank"}>
-                  <img
+                <a
+                  href="https://www.linkedin.com/in/vini-ventura29/"
+                  target={"_blank"}
+                >
+                  <Image
+                    width={100}
+                    height={100}
                     src="/brand-linkedin.svg"
                     className="flex items-center p-2 w-12 bg-blue-50 rounded-full hover:bg-blue-100 transition-all duration-300 hover:shadow cursor-pointer"
                     alt=""
@@ -53,7 +73,7 @@ export default function Vinicius() {
 
           <div className="h-48 py-4">
             <h2 className="mb-2 text-2xl font-bold">Education 📚</h2>
-            <ul className="space-y-1 text-gray-500 list-disc list-inside dark:text-gray-400">
+            <ul className="space-y-1 text-gray-500 list-disc list-inside">
               <li>
                 Curso Técnico em Analise e Desenvolvimento | Etec Polivalente de
                 Americana | 2019 - 2021
@@ -70,7 +90,7 @@ export default function Vinicius() {
 
           <div className="h-48 py-4">
             <h2 className="mb-2 text-2xl font-bold">Hobbies ❤️</h2>
-            <ul className="space-y-1 text-gray-500 list-disc list-inside dark:text-gray-400">
+            <ul className="space-y-1 text-gray-500 list-disc list-inside">
               <li>Cinema</li>
               <li>Instrumentos musicais</li>
               <li>Futebol</li>
@@ -80,7 +100,7 @@ export default function Vinicius() {
 
           <div className="h-48 py-4">
             <h2 className="mb-2 text-2xl font-bold">Projects 💼</h2>
-            <ul className="space-y-1 text-gray-500 list-disc list-inside dark:text-gray-400">
+            <ul className="space-y-1 text-gray-500 list-disc list-inside">
               <li>
                 <a
                   href="https://venturanotes.vercel.app/"
@@ -104,7 +124,9 @@ export default function Vinicius() {
           </div>
         </div>
       </div>
-      <img
+      <Image
+        width={100}
+        height={100}
         className="absolute top-0 w-full h-full z-0 opacity-20"
         src="bg-2.svg"
         alt=""
@@ -112,4 +134,3 @@ export default function Vinicius() {
     </>
   );
 }
-

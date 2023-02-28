@@ -43,20 +43,27 @@ export default function Viktor() {
               </a>
               <p className="text-2xl">18 years old</p>
               <div className="flex gap-3 mt-6">
-                <Image
-                  width={100}
-                  height={100}
-                  src="/brand-github.svg"
-                  className="flex items-center p-2 w-12 bg-blue-50 rounded-full hover:bg-blue-100 transition-all duration-300 hover:shadow cursor-pointer"
-                  alt=""
-                />
-                <Image
-                  width={100}
-                  height={100}
-                  src="/brand-linkedin.svg"
-                  className="flex items-center p-2 w-12 bg-blue-50 rounded-full hover:bg-blue-100 transition-all duration-300 hover:shadow cursor-pointer"
-                  alt=""
-                />
+                <a href="https://github.com/viktormarinho" target="_blank">
+                  <Image
+                    width={100}
+                    height={100}
+                    src="/brand-github.svg"
+                    className="flex items-center p-2 w-12 bg-blue-50 rounded-full hover:bg-blue-100 transition-all duration-300 hover:shadow cursor-pointer"
+                    alt=""
+                  />
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/viktor-marinho/"
+                  target={"_blank"}
+                >
+                  <Image
+                    width={100}
+                    height={100}
+                    src="/brand-linkedin.svg"
+                    className="flex items-center p-2 w-12 bg-blue-50 rounded-full hover:bg-blue-100 transition-all duration-300 hover:shadow cursor-pointer"
+                    alt=""
+                  />
+                </a>
               </div>
             </div>
           </div>
